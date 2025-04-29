@@ -2,14 +2,20 @@
 const btn = document.getElementById('btn')
 const container = document.querySelector('.container')
 
-let tarea = 1
+//Yo se de antemano que hay 200 tareas
+//Si la tarea no existe, se debe lanzar un error
+
+let tarea = 200
 
 const traerTarea = async (id) => {
     try {
-        const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${tarea}`)
+        const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
+        
+        if (!res.ok) {
+            throw new Error('Error al obtener la tarea');
+        }
         const data = await res.json();
         console.log(data);
-        tarea++;
         return data;
     } catch (error) {
         console.log(error);
@@ -18,6 +24,6 @@ const traerTarea = async (id) => {
     }
 }
 
-btn.addEventListener('click', () => { traerTarea() })
+btn.addEventListener('click', () => { traerTarea(tarea), tarea++ })
 
 
