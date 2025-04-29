@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #272727;
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton button, input{
+    margin: 10px;
+    border: none;
+    border-radius: 16rem;
+    background-color: #363636;
+    color: #fff;
+    width: 500px;
+    height: 50px;
+    font-size: 1.2rem;
+}
