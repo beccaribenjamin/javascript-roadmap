@@ -29,7 +29,7 @@ const processEmail = compose(throwIfInvalid, toLowerCase, trim)
 
 // Ejemplo de uso
 try {
-    const emailLimpio = procesarEmail("   ExAmple@DOMinio.COM  ");
+    const emailLimpio = processEmail("   ExAmple@DOMinio.COM  ");
     console.log("Email procesado:", emailLimpio); // Email procesado: example@dominio.com
 } catch (error) {
     console.error("Error:", error.message);
