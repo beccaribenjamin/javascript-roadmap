@@ -126,7 +126,7 @@ console.log(arraySinDuplicados); // [1, 2, 3, 4, 5]
 
 - Operaciones de conjuntos (Unión, Intersección, Diferencia): Aunque no tienen métodos incorporados para esto, puedes implementarlas fácilmente usando Sets.
 
-- - Unión:
+  - Unión:
 
 ```js
 const setA = new Set([1, 2, 3]);
@@ -134,7 +134,7 @@ const setB = new Set([3, 4, 5]);
 const union = new Set([...setA, ...setB]);
 console.log(union); // Consola ---> Set(5) { 1, 2, 3, 4, 5 }
 ```
-- - Intersección:
+  - Intersección:
 
 ```js
 const setC = new Set([1, 2, 3, 4]);
@@ -143,7 +143,7 @@ const interseccion = new Set([...setC].filter(item => setD.has(item)));
 console.log(interseccion); // Set(2) { 3, 4 }
 ```
 
-- - Diferencia:
+  - Diferencia:
 
 ```js
 const setE = new Set([1, 2, 3, 4]);
