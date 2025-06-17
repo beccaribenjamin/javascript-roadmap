@@ -65,8 +65,8 @@ function searchProduct(busqueda) {
     });
 }
 
-// --- 5. Función para actualizar el stock de un producto por ID ---
-// Usaremos find() para localizar el producto y luego actualizaremos su propiedad.
+// Función para actualizar el stock de un producto por ID
+// Usando find() para encontrar el producto y luego actualizarlo.
 function actualizarStock(idProducto, nuevoStock) {
     console.log(`\n--- Actualizando stock del producto ID: ${idProducto} ---`);
     const productoEncontrado = listaProductos.find(producto => producto.id === idProducto);
@@ -79,11 +79,11 @@ function actualizarStock(idProducto, nuevoStock) {
         console.log(`Producto con ID ${idProducto} no encontrado.`);
     }
     console.log("Inventario después de la actualización:");
-    productList(); // Volvemos a listar para ver el cambio
+    productList();
 }
 
-// --- 6. Función para eliminar un producto por ID ---
-// Usaremos filter() para crear un nuevo array sin el producto a eliminar.
+// Función para eliminar un producto por ID
+// Usando filter() para crear un nuevo array sin el producto a eliminar.
 function eliminarProducto(idProducto) {
     console.log(`\n--- Eliminando producto ID: ${idProducto} ---`);
     const longitudAntes = listaProductos.length;
@@ -95,7 +95,7 @@ function eliminarProducto(idProducto) {
         console.log(`No se encontró un producto con ID ${idProducto} para eliminar.`);
     }
     console.log("Inventario después de la eliminación:");
-    productList(); // Volvemos a listar para ver el cambio
+    productList(); // Listar los productos
 }
 
 // Obtener el valor de todo el inventario
