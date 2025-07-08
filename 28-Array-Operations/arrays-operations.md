@@ -92,4 +92,4 @@
 - `array`(Opcional): El elemento actual que está siendo procesado en el array.
 - `valorInicial`(Opcional): Un valor a usar como primer argumento en la primera llamada de la función callback. Si no se proporciona el valorInicial, el primer elemento del array será utilizado y saltado. Llamando a reduce() sobre un array vacío sin un valorInicial lanzará un TypeError.
 -
-- !()[[00-Arrays]]
+- [[Arrays]]

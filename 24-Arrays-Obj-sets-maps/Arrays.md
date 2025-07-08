@@ -111,4 +111,4 @@ Los Arrays o Arreglos en JavaScript son un objeto global que se utiliza para alm
   const array3 = array1.concat(array2);
   console.log(array3);  // Consola---> [1, 2, 3, 4]
   ```
-- [[variables]]
+- [[variables]] [[arrays-operations]]
