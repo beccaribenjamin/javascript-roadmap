@@ -38,4 +38,4 @@
 - ## Conclusión o Resumen
   
   Las Higher Order Functions son una característica fundamental y poderosa de JavaScript que te permite tratar las funciones como cualquier otro dato. Son esenciales para escribir código más limpio, modular, reutilizable y declarativo, impulsando un estilo de programación más funcional. Si bien pueden requerir un cambio de mentalidad al principio, dominarlas es clave para escribir JavaScript moderno y eficiente, y son la base de muchas librerías y frameworks populares. Son una herramienta indispensable en el arsenal de cualquier desarrollador JavaScript.
-- [[arrays-operations]] [[Functions]]
+- [[Arrays]] [[arrays-operations]] [[Functions]]
